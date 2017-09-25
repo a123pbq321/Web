@@ -3,22 +3,14 @@ body, html {
     height: 100%;
 }
 
-/* The hero image */
 .hero-image {
-    /* The image used */
     background-image:url(Harmonious-LR.jpg);
-
-    /* Set a specific height */
     height: 100%;
-
-    /* Position and center the image to scale nicely on all screens */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
-
-/* Place text in the middle of the image */
 .hero-text {
     text-align: center;
     position: absolute;
@@ -30,15 +22,173 @@ body, html {
 
 body{background-color: antiquewhite}
 #good{background-image: url(2560x1600-dark-green-solid-color-background.jpg); color:aliceblue}
-button {background-color: white;
+#title{text-align: center;}
+#Footer{text-align: center; background-color: cornflowerblue}
+
+ ul{
+   list-syle-type:none;
+   margin:0;
+   padding:0;
+   overflow:hidden;
+   background-color:black;
+  }
+  li{
+   float:left;
+  }
+  li a, .dropbtn{
+   display:inline-block;
+   color:white;
+   text-align:center;
+   padding:20px 16px;
+   text-decoration:none;
+  }
+  li a:hover, .dropdown:hover .droptn{
+   background-color:black;
+  }
+  li.dropdown{
+   display:inline-block;
+  }
+  .dropdown-content{
+   display:none;
+   position:absolute;
+   background-color:white;
+   min-width:160px;
+   box-shadow:0px 8px 16px rgba(0,0,0,0.2);
+   z-index:1;
+  }
+  .dropdown-content a{
+   color:brown;
+   padding:12px 16px;
+   text-decoration: none;
+   display:block;
+   text-align: left;
+  }
+  .dropdown-content a: hover{background-color:grey}
+  .dropdown:hover .dropdown-content{
+   display:block;
+  } 
+
+body{
+  background-image:url(img/img/images-3.jpeg)
+ }
+
+
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display:table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.header {
+    background-color:black;
+    color: #ffffff;
+    padding: 15px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: black;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+
+.wrapper {overflow: auto;}
+
+#main {margin-left: 4px;}
+
+#leftsidebar {
+    float: none;
+    width: auto;
+}
+
+#menulist {
+    margin: 0;
+    padding: 0;
+}
+
+.menuitem {
+    background: #CDF0F6;
+    border: 1px solid #d4d4d4;
+ border-radius:4px;
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+}
+
+@media screen and (min-width: 480px) {
+    #leftsidebar {width: 100px; float: left;}
+    #main {margin-left: 216px;}
+}
+
+.hr{
+	border-style: solid}
+#first{
+	position: relative; width: 500px; left: 300px; top: -150px
+}
+
+#second{
+	position:relative; width: 700px; left: 300px; top:-200px
+}
+
+#three{
+	position:relative; width: 400px; left: 650px; top: -300px; font-size: 40px
+}
+#bigimg{width: 50px; height: 50px;
+}
+@media (max-width: 1000px){
+}
+.button2{border-radius: 12px;background-color: white;
     color: black;
-    border: 4px solid #00BBFF;}
+    border: 2px solid #4CAF50; background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;}
+.button2:hover {
+    background-color: #00FBFF;
+	color: white;}
 .button {
   display: inline-block;
   border-radius: 4px;
-  background-color: #FF0004;
+  background-color: #f4511e;
   border: none;
-  color: #000000;
+  color: #FFFFFF;
   text-align: center;
   font-size: 28px;
   padding: 20px;
@@ -46,7 +196,7 @@ button {background-color: white;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
-font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"}
+}
 
 .button span {
   cursor: pointer;
@@ -72,3 +222,4 @@ font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"}
   opacity: 1;
   right: 0;
 }
+.solid {border-style: solid;}
